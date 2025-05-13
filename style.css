@@ -17,7 +17,7 @@ body {
      display: flex;
      justify-content: center;
      gap: 20px;
-     width: 90%;
+     width: 100%;
      color: white;
      flex-wrap: wrap;
 
@@ -25,7 +25,7 @@ body {
 
 .left-card {
      display: flex;
-     width: 60%;
+     width: 70%;
      gap: 30px;
      flex-direction: column;
 }
@@ -89,6 +89,7 @@ p {
      padding: 30px;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
      width: 70%;
+
 }
 
 .grey {
@@ -97,6 +98,7 @@ p {
      padding: 30px;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
      width: 30%;
+
 }
 
 .white {
@@ -117,16 +119,20 @@ p {
 }
 
 @media(max-width:768px) {
-     .container {
-          width: 50px;
-     }
 
      .left-card {
           flex-direction: column;
      }
 
      .right-card {
-          flex-direction: row;
+          flex-direction: column;
      }
 
+     .top-card {
+          flex-direction: column;
+     }
+
+     .bottom-card {
+          flex-direction: column;
+     }
 }
