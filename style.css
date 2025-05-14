@@ -10,7 +10,7 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 50px;
+     padding: 100px;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
      width: 70%;
      gap: 30px;
      flex-direction: column;
+     flex-grow: 1;
 }
 
 .right-card {
@@ -93,17 +94,18 @@ p {
 }
 
 .grey {
-     background-color: #48556a;
+     background-color: #19212e;
      border-radius: 8px;
      padding: 30px;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
      width: 30%;
 
+
 }
 
 .white {
      background-color: white;
-     color: #48556a;
+     color: #19212e;
      border-radius: 8px;
      padding: 30px;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
@@ -116,9 +118,11 @@ p {
      padding: 30px;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
      width: 70%;
+
 }
 
 @media(max-width:768px) {
+
 
      .left-card {
           flex-direction: column;
@@ -126,13 +130,32 @@ p {
 
      .right-card {
           flex-direction: column;
+
      }
 
      .top-card {
           flex-direction: column;
+
      }
 
      .bottom-card {
           flex-direction: column;
+
+     }
+
+     .left-card,
+     .right-card,
+     .top-card,
+     .bottom-card {
+          width: 100%;
+     }
+
+     h3 {
+          font-size: 15px;
+     }
+
+     p {
+          font-weight: 100;
+          font-size: 15px;
      }
 }
